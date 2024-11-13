@@ -140,6 +140,7 @@ Follow these steps to get a local copy of the project running on your machine.
 
 The project’s main files are structured as follows:
 
+```plaintext
 event-planner-app
 ├── public
 │   └── index.html            # Main HTML file
@@ -156,7 +157,7 @@ event-planner-app
 ├── db.json                   # JSON Server data file
 ├── package.json              # Project metadata and scripts
 └── README.md                 # Project documentation
-
+```
 
 ---
 
