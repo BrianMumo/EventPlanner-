@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "title": "Team Meeting",
+      "date": "2024-11-15",
+      "time": "21:45",
+      "location": "Office A",
+      "description": "Quarterly team meeting.",
+      "id": "1"
+    },
+    {
+      "title": "Wedding",
+      "date": "2024-12-07",
+      "time": "10:00",
+      "location": "God's Light Christian Church",
+      "description": "Faith and Brian",
+      "id": "bee4"
+    },
+    {
+      "id": "acb3",
+      "title": "Project Presentation",
+      "date": "2024-11-13",
+      "time": "09:00",
+      "location": "Google Meeting",
+      "description": "Event Planner SPA"
+    },
+    {
+      "id": "0b16",
+      "title": "Farming Orientation",
+      "date": "2024-11-14",
+      "time": "09:20",
+      "location": "Nairobi",
+      "description": "Get the headstart of farming cabbages"
+    }
+  ]
+}

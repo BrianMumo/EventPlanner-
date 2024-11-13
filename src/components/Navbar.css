@@ -1,0 +1,80 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #00796b;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-title {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-title:hover {
+    color: #a7ffeb;
+  }
+  
+  .navbar-title::before {
+    content: '📅'; /* A simple calendar icon for the logo */
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #004d40;
+    color: #a7ffeb;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-links {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .navbar-links li {
+      margin: 0;
+    }
+  }
+  
