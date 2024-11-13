@@ -140,23 +140,23 @@ Follow these steps to get a local copy of the project running on your machine.
 
 The project’s main files are structured as follows:
 
-```plaintext
 event-planner-app
 ├── public
 │   └── index.html            # Main HTML file
 ├── src
 │   ├── components
 │   │   ├── Navbar.js         # Navigation bar component
+│   │   ├── Navbar.css        # CSS file for Navbar styling
 │   │   ├── EventList.js      # Displays list of events
 │   │   ├── EventDetails.js   # Shows event details
 │   │   ├── EventForm.js      # Form for creating/editing events
 │   ├── App.js                # Main app component with routes
 │   ├── index.js              # Main React DOM render
-│   └── styles.css            # Custom CSS for styling
+│   ├── styles.css            # Global CSS styling for the app
 ├── db.json                   # JSON Server data file
 ├── package.json              # Project metadata and scripts
 └── README.md                 # Project documentation
-```
+
 
 ---
 
