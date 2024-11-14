@@ -6,7 +6,7 @@ function EventList() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('/events')
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => setEvents(data))
       .catch((error) => console.error('Error fetching events:', error));

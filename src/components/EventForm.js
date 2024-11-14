@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import './EventForm.css'; // Assuming you have a CSS file for styling
 
 function EventForm({ addEvent, updateEvent }) {
   const { id: eventId } = useParams();
@@ -15,7 +14,7 @@ function EventForm({ addEvent, updateEvent }) {
 
   useEffect(() => {
     if (eventId) {
-      fetch(`/events/${eventId}`)
+      fetch(`${process.env.REACT_APP_API_URL}/events/${eventId}`)
         .then((res) => res.json())
         .then((data) => {
           setTitle(data.title);
@@ -37,7 +36,7 @@ function EventForm({ addEvent, updateEvent }) {
 
     const event = { title, date, time, location, description };
 
-    fetch(eventId ? `/events/${eventId}` : '/events', {
+    fetch(eventId ? `${process.env.REACT_APP_API_URL}/events/${eventId}` : `${process.env.REACT_APP_API_URL}/events`, {
       method: eventId ? 'PUT' : 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(event),
@@ -51,12 +50,10 @@ function EventForm({ addEvent, updateEvent }) {
           addEvent(data);
           setMessage('Event added!');
         }
-        // Redirect to events page after adding/updating the event
-        setTimeout(() => navigate('/'), 1000); // 1-second delay to show the message
+        setTimeout(() => navigate('/'), 1000); // Redirect to events page after adding/updating the event
       })
       .catch(() => setMessage('An error occurred. Please try again.'));
 
-    // Clear form fields
     setTitle('');
     setDate('');
     setTime('');
