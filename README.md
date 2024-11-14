@@ -49,11 +49,6 @@ An intuitive web application for planning, organizing, and managing events. Buil
 
 Follow these steps to get a local copy of the project running on your machine.
 
-### Prerequisites
-
-- **Node.js** (v14 or higher recommended)
-- **Git** (optional, for version control)
-
 ### Installation
 
 1. **Clone the Repository**
