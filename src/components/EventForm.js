@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import './EventForm.css'; // Assuming you have a CSS file for styling
 
 function EventForm({ addEvent, updateEvent }) {
   const { id: eventId } = useParams();
@@ -43,12 +44,19 @@ function EventForm({ addEvent, updateEvent }) {
     })
       .then((res) => res.json())
       .then((data) => {
-        setMessage(eventId ? 'Event updated!' : 'Event added!');
-        eventId ? updateEvent(data) : addEvent(data);
-        setTimeout(() => navigate('/'), 1500);
+        if (eventId) {
+          updateEvent(data);
+          setMessage('Event updated!');
+        } else {
+          addEvent(data);
+          setMessage('Event added!');
+        }
+        // Redirect to events page after adding/updating the event
+        setTimeout(() => navigate('/'), 1000); // 1-second delay to show the message
       })
       .catch(() => setMessage('An error occurred. Please try again.'));
 
+    // Clear form fields
     setTitle('');
     setDate('');
     setTime('');

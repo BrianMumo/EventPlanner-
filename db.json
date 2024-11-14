@@ -31,6 +31,30 @@
       "time": "09:20",
       "location": "Nairobi",
       "description": "Get the headstart of farming cabbages"
+    },
+    {
+      "id": "369a",
+      "title": "Morning Prayers",
+      "date": "2024-11-15",
+      "time": "05:00",
+      "location": "Holy Mountain",
+      "description": "Morning Glory"
+    },
+    {
+      "id": "d39c",
+      "title": "Dubai Vacation",
+      "date": "2024-12-08",
+      "time": "10:00",
+      "location": "Dubai",
+      "description": "Take some time to re-energize"
+    },
+    {
+      "id": "ed95",
+      "title": "Team Building",
+      "date": "2024-11-16",
+      "time": "10:30",
+      "location": "Karura Forest",
+      "description": "Let's meet and have fun"
     }
   ]
 }
