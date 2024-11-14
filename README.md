@@ -18,9 +18,9 @@ An intuitive web application for planning, organizing, and managing events. Buil
 
 ---
 
-## Demo
+## Live link of the project
 
-[https://EventPlanner]
+[https://event-planner-gamma.vercel.app/]
 
 ---
 
